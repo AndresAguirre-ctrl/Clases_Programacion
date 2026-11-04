@@ -1,0 +1,6 @@
+Con el editor (nano) creamos el código fuente (hola.mundo.py) para el interpretado llamamos al intérprete (python3 hola.mundo.py) y ya se nos ejecuta en la consola.
+
+Con el editor (nano) creamos el código fuente (hola.mundo.c) para el compilado, llamamos al compilador (gccc hola.mundo.c -o hola_mundo_c) se genera un ejecutable (hola_mundo_c) este es el "a.out", luego ejecutamos (./hola_mundo_c) y ya se nos ejecuta en la consola.
+
+Para eliminar un archivo desde comando es rn
+
