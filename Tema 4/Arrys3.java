@@ -1,32 +1,26 @@
 /*
- * Arrys3.java
- * 
+ * Arrays3.java
  */
 
 import java.util.Random;
-
 public class Arrys3 {
 	
 	public static void main (String[] args) {
-		
-		// 1. Crear un array de char, de 5 valores, inicializados a las vocales
-		char[] vocales = {'a', 'e', 'i', 'o', 'u'};
-		
-		// 2. Recorremos con un bucle while
-		System.out.println("Recorriendo las vocales con un bucle while:");
-		int i = 0;
-		while (i < vocales.length) {
-			System.out.print(vocales[i] + " ");
-			i++;
-		}
-		System.out.println("\n"); // Salto de línea decorativo
-		
-		// 3. Obtenemos de forma aleatoria una de las cinco vocales
 		Random random = new Random();
-		// Genera un índice aleatorio entre 0 y 4 (ambos inclusive)
-		int indiceAleatorio = random.nextInt(vocales.length); 
-		char vocalAleatoria = vocales[indiceAleatorio];
-		
-		System.out.println("La vocal obtenida de forma aleatoria es: " + vocalAleatoria);
+		//crear una array de char, de 5 valores inicializados a las vocales
+		char[] arrayChars = {'a', 'e', 'i', 'o', 'u'};
+		//recorremos con un bucle while, mostramos en consola
+		for (int i = 0; i < arrayChars.length; i++)
+			System.out.printf("Posción: %d, valor: %c%n", i, arrayChars[i]);
+		int contador = 0;
+		while (contador < arrayChars.length) {
+			System.out.printf("Posción: %d, valor: %c%n", contador, arrayChars[contador]);
+			contador++;
+		}
+		if (arrayChars.length != 0) { 
+			int posicion = random.nextInt(0, arrayChars.length);
+			System.out.printf("%nVocal obtenidad de forma aleatoria: %c%n", arrayChars[posicion]);
+			//obtenemos de forma aleatoria una de las cinco vocales
+		}
 	}
 }
